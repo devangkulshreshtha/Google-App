@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        <item name="actionOverflowMenuStyle">@style/CMOptionsMenu</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CMOptionsMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/ColorPrimary</item>
+        <item name="android:actionMenuTextColor">#212121</item>
+    </style>
+
+
+</resources>

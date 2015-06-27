@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16.0dip">
+
+    <TextView
+        android:id="@+id/tvMonthYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="May 2015"
+        android:textSize="17sp"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:text="3"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:id="@+id/tvRecords"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:background="@color/accent"
+        android:textColor="#ffffff"
+        />
+
+</RelativeLayout>

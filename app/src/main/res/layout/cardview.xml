@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="15.0dip"
+        card_view:cardCornerRadius="5.0dip"
+        card_view:cardElevation="2.0dip"
+        card_view:contentPadding="8.0dip">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Lung Cancer"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ff212121" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                app:rcBackgroundPadding="0dp"
+                android:id="@+id/progressBar6"
+                app:rcBackgroundRadius="5dp"
+                app:rcBackgroundColor="#ffffff"
+                app:rcProgressColor="@color/accent"
+                app:rcProgress="50"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                app:rcMax="100" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Medium Risk"
+                android:textColor="#fff44336" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Click to see more..."
+                android:textColor="@color/accent" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/textView25"
+                android:layout_toRightOf="@id/textView25"
+                android:text="(56%)" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

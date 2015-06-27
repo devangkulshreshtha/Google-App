@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/tool_bar2"
+            layout="@layout/tool_bar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool_bar2"
+            android:padding="16dp"
+            android:id="@+id/textView"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Take a look at the results below."/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textView"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_recycler_view"
+            android:text="How did you feel?"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/primary_text"
+            android:id="@+id/textView2"
+            android:padding="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/linearLayout"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2">
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/tttt4"
+                android:layout_gravity="center"
+                android:id="@+id/iv1"
+                android:onClick="rating"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="rating"
+                android:id="@+id/iv2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/tttt1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="rating"
+                android:id="@+id/iv3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/tttt2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="rating"
+                android:id="@+id/iv4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/tttt3"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="rating"
+                android:id="@+id/iv5"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/tttt4"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Note"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/textView4"
+            android:textColor="@color/primary_text"
+            android:layout_below="@+id/linearLayout"/>
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Add a note to report"
+            android:layout_below="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_toLeftOf="@+id/saveInDatabase"
+            android:layout_toStartOf="@+id/saveInDatabase" />
+
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView4"
+            android:background="@drawable/fab_shape"
+            android:src="@drawable/ic_action_done"
+            android:tint="@android:color/white"
+            android:id="@+id/saveInDatabase" />
+    </RelativeLayout>
+
+</ScrollView>
