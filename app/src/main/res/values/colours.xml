@@ -12,6 +12,14 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
 
+    <color name="orange_salmon">#EC5745</color>
+
+    <color name="red_wine">#A6463A</color>
+
+    <color name="red_wood">#4B1D17</color>
+
+    <color name="green_grass">#109121</color>
+
     <color name="green">#75cd00</color>
     <color name="green_dark">#3c6e02</color>
     <color name="blue">#0044e1</color>
